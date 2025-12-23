@@ -1,0 +1,69 @@
+
+
+# HTML content (landing page full deploy)
+html_content = """<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALSTORE SMM PANEL — Full Deploy</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#d4af37;--dark:#000;--card:#0f0f0f;--muted:#9aa0a6}
+*{box-sizing:border-box}body{margin:0;font-family:Poppins,system-ui;background:radial-gradient(1200px 600px at 10% -10%,#1b1b1b,#000);color:#fff}
+.container{max-width:1200px;margin:auto;padding:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;background:linear-gradient(135deg,var(--gold),#b8962e);color:#000;font-weight:700;border:none;cursor:pointer;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid rgba(212,175,55,.5)}
+.header{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;letter-spacing:2px;color:var(--gold)}
+.card{background:linear-gradient(180deg,#121212,#0a0a0a);border:1px solid rgba(212,175,55,.25);border-radius:24px;padding:28px;margin-bottom:24px}
+.h1{font-size:42px;line-height:1.15;margin:0 0 12px}
+.sub{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.footer{border-top:1px solid #1e1e1e;margin-top:64px;padding-top:12px;text-align:center}
+.copy{color:#777;font-size:13px}
+@media(max-width:900px){.h1{font-size:34px}}
+</style>
+</head>
+<body>
+
+<header class="container header">
+  <div class="logo">ALSTORE</div>
+  <div style="display:flex;gap:10px">
+    <a class="btn ghost" href="#features">Fitur</a>
+    <a class="btn" href="#download">Download ZIP</a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card" id="hero">
+    <h1 class="h1">ALSTORE SMM PANEL</h1>
+    <p class="sub">Full Production Package • Android APK + Admin Web + Cloud Functions • Affiliate & Multi-Level Ready</p>
+    <a class="btn" href="#download">Download Full ZIP</a>
+  </section>
+
+  <section class="card" id="features">
+    <h2>Fitur Utama</h2>
+    <ul class="sub">
+      <li>Android App Signed APK: Dashboard, Affiliate, Multi-level, Grafik, Bonus, Realtime Notif, Multi-provider backup</li>
+      <li>Admin Web Panel: List Order, Approve Withdraw, Leaderboard</li>
+      <li>Cloud Functions: Multi-level MLM commission, bonus performa, notif realtime, multi-provider failover</li>
+      <li>Deploy Instructions & README</li>
+      <li>Support Midtrans Sandbox → switch ke Production</li>
+    </ul>
+  </section>
+
+  <section class="card" id="download">
+    <h2>Download ZIP Full Deploy</h2>
+    <p class="sub">Klik tombol di bawah untuk mendapatkan ZIP full production ALSTORE SMM PANEL:</p>
+    <a class="btn" href="https://yourhost.com/ALSTORE-SMM-FULL.zip" target="_blank">Download ZIP</a>
+  </section>
+</main>
+
+<footer class="container footer">
+  <p class="copy">© 2025 ALSTORE SMM PANEL • Support: 0882-3579-5238</p>
+</footer>
+
+</body>
+</html>
+"""
